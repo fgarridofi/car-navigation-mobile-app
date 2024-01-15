@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">RoadGO</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZmdhcnJpZG9maSIsImEiOiJjbGV6aG16ejAwZjd1M3lzMmo3N2FkOWN3In0.crUcVOmxcz-oEj0ABcLHng</string>
+
+
+    <string name="blank_field_error">Este campo no puede estar vacío</string>
+    <string name="blank_email_error">El correo electrónico no puede estar vacío</string>
+    <string name="blank_first_name_error">El nombre no puede estar vacío</string>
+    <string name="blank_last_name_error">El apellido no puede estar vacío</string>
+    <string name="blank_phone_error">El teléfono no puede estar vacío</string>
+    <string name="length_phone_error">El teléfono no es correcto</string>
+    <string name="blank_gender_error">El género no puede estar vacío</string>
+    <string name="blank_date_of_birth_error">La fecha de nacimiento no puede estar vacía</string>
+    <string name="hide_password">Ocultar contraseña</string>
+    <string name="show_password">Mostrar contraseña</string>
+    <string name="invalid_email">Correo electrónico inválido</string>
+    <string name="length_password_error">La contraseña debe tener al menos %d caracteres</string>
+    <string name="letter_digit_password_error">La contraseña debe contener al menos una letra y un número</string>
+    <string name="confirm_password_error">Las contraseñas no coinciden</string>
+    <string name="unknown_exception_error">Ocurrió un error desconocido</string>
+    <string name="io_exception_error">No se pudo conectar al servidor, verifica tu conexión a internet</string>
+    <string name="user_created_successfully">Usuario creado exitosamente.</string>
+    <string name="component_created_successfully">Componente creado exitosamente.</string>
+    <string name="component_updated_successfully">Componente actualizado exitosamente.</string>
+    <string name="component_deleted_successfully">Componente eliminado exitosamente.</string>
+
+    <string name="female">Femenino</string>
+    <string name="male">Masculino</string>
+
+    <!--  Form Screen  -->
+    <string name="headline">Crea tu cuenta</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="email">Correo electrónico</string>
+    <string name="phone">Teléfono</string>
+    <string name="gender">Género</string>
+    <string name="date_of_birth">Fecha de nacimiento</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Repetir contraseña</string>
+    <string name="create_user">Crear</string>
+    <string name="inicio_bienbenida">Bienvenido a RoadGO</string>
+
+    <string name="info">Información</string>
+    <string name="no_acount_exist">¡No se ha creado ninguna cuenta antes con el correo electrónico ingresado!</string>
+    <string name="SingUp">Registrarse</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="introduceEmail">¡Por favor ingresa tu correo electrónico!</string>
+    <string name="email_corto">¡La longitud del correo electrónico es demasiado corta!</string>
+    <string name="email_format">¡Formato de correo electrónico incompatible!</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="noCuenta">¿No tienes una cuenta?</string>
+    <string name="no_internet_connection">¡No se encontró conexión a Internet!</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="no_validate">Usuario o contraseña incorrectos</string>
+    <string name="user_identificated_successfully">Usuario identificado exitosamente</string>
+    <string name="introducePassword">Por favor introduce tu contraseña !!</string>
+
+    <string name="action_address_autofill_ui_example">Abrir ejemplo de interfaz de autocompletar dirección</string>
+    <string name="action_address_autofill_example">Abrir ejemplo de autocompletar dirección</string>
+
+    <string name="action_discover_ui_example">Abrir ejemplo de interfaz de descubrimiento</string>
+    <string name="action_discover_kotlin_example">Abrir ejemplo de descubrimiento en Kotlin</string>
+    <string name="action_discover_java_example">Abrir ejemplo de descubrimiento en Java</string>
+
+    <string name="action_place_autocomplete_ui_example">Abrir ejemplo de interfaz de autocompletar lugar</string>
+    <string name="action_place_autocomplete_kotlin_example">Abrir ejemplo de autocompletar lugar en Kotlin</string>
+
+    <string name="action_open_custom_theme_example">Abrir ejemplo de tema personalizado</string>
+    <string name="action_open_forward_geocoding_kt_example">Abrir ejemplo de geocodificación directa en Kotlin</string>
+    <string name="action_open_forward_geocoding_java_example">Abrir ejemplo de geocodificación directa en Java</string>
+    <string name="action_open_forward_geocoding_batch_resolving_kt_example">Abrir ejemplo de resolución por lotes en Kotlin</string>
+    <string name="action_open_forward_geocoding_batch_resolving_java_example">Abrir ejemplo de resolución por lotes en Java</string>
+    <string name="action_open_reverse_geocoding_kt_example">Abrir ejemplo de geocodificación inversa en Kotlin</string>
+    <string name="action_open_reverse_geocoding_java_example">Abrir ejemplo de geocodificación inversa en Java</string>
+    <string name="action_open_category_search_kt_example">Abrir ejemplo de búsqueda por categoría en Kotlin</string>
+    <string name="action_open_category_search_java_example">Abrir ejemplo de búsqueda por categoría en Java</string>
+    <string name="action_open_offline_search_kt_example">Abrir ejemplo de búsqueda sin conexión en Kotlin</string>
+    <string name="action_open_offline_search_java_example">Abrir ejemplo de búsqueda sin conexión en Java</string>
+    <string name="action_open_offline_reverse_geocoding_kt_example">Abrir ejemplo de geocodificación inversa sin conexión en Kotlin</string>
+    <string name="action_open_offline_reverse_geocoding_java_example">Abrir ejemplo de geocodificación inversa sin conexión en Java</string>
+    <string name="action_open_japan_search_kt_example">Abrir ejemplo de búsqueda en Japón en Kotlin</string>
+    <string name="action_open_japan_search_java_example">Abrir ejemplo de búsqueda en Japón en Java</string>
+    <string name="action_open_history_data_provider_kt_example">Abrir ejemplo de proveedor de datos de historial en Kotlin</string>
+    <string name="action_open_history_data_provider_java_example">Abrir ejemplo de proveedor de datos de historial en Java</string>
+    <string name="action_open_favorites_data_provider_kt_example">Abrir ejemplo de proveedor de datos de favoritos en Kotlin</string>
+    <string name="action_open_favorites_data_provider_java_example">Abrir ejemplo de proveedor de datos de favoritos en Java</string>
+    <string name="action_open_custom_data_provider_java_example">Abrir ejemplo de proveedor de datos personalizado en Java</string>
+    <string name="action_open_custom_data_provider_kt_example">Abrir ejemplo de proveedor de datos personalizado en Kotlin</string>
+
+    <string name="simple_ui_toolbar_title">Búsqueda de Mapbox</string>
+
+    <string name="query_hint">Seleccione un destino</string>
+
+    <string name="address_autofill_query_hint">Seleccione un destino</string>
+    <string name="address_autofill_address_state_hint">Estado</string>
+    <string name="address_autofill_address_zip_hint">Código postal</string>
+    <string name="address_autofill_address_city_hint">Ciudad</string>
+    <string name="address_autofill_address_apt_hint">Apto., suite, etc. (opcional)</string>
+    <string name="address_autofill_pin_correction_note">Arrastra el mapa para corregir la posición del pin</string>
+    <string name="address_autofill_error_pin_correction">No es posible seleccionar la dirección indicada</string>
+
+    <string name="discover_search_nearby">Buscar cafés cercanos</string>
+    <string name="discover_search_in_area">Buscar cafés en el área seleccionada</string>
+    <string name="discover_search_error">Error durante la solicitud de búsqueda</string>
+
+    <string name="place_autocomplete_query_hint">Buscar lugares</string>
+    <string name="place_autocomplete_reverse_geocoding_error_message">No se puede ubicar la coordenada seleccionada</string>
+    <string name="place_autocomplete_selection_error">Error durante la solicitud</string>
+</resources>

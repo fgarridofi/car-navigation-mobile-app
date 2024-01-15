@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_blue"
+    tools:context=".ui.MainActivity4"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/card_background"
+        android:elevation="4dp"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/query_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:autofillHints="@null"
+            android:background="@drawable/card_background"
+            android:elevation="4dp"
+            android:hint="@string/address_autofill_query_hint"
+            android:inputType="text"
+            android:minHeight="?actionBarSize"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.mapbox.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_margin="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mapbox_logoGravity="bottom"
+            />
+
+        <ImageView
+            android:id="@+id/map_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_pin"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/map_center"
+            app:layout_constraintEnd_toEndOf="@+id/map"
+            app:layout_constraintStart_toStartOf="@+id/map"
+            />
+
+        <Space
+            android:id="@+id/map_center"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/map"
+            app:layout_constraintEnd_toEndOf="@+id/map"
+            app:layout_constraintStart_toStartOf="@+id/map"
+            app:layout_constraintTop_toTopOf="@+id/map"
+            />
+
+        <com.mapbox.search.ui.view.SearchResultsView
+            android:id="@+id/search_results_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/card_background"
+            android:clipToPadding="false"
+            android:elevation="4dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="22dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/query_text"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="1dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:padding="1dp">
+
+                <Button
+                    android:id="@+id/button_navigate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_alignParentBottom="true"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:background="@drawable/rounded_button2"
+                    android:drawableLeft="@drawable/ic_navigation"
+                    android:drawablePadding="8dp"
+                    android:text="Ir a navegación"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:id="@+id/close_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/ic_close_grey"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/search_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/search_card_elevation"
+            >
+
+            <com.mapbox.search.ui.view.place.SearchPlaceBottomSheetView
+                android:id="@+id/search_place_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:elevation="@dimen/search_card_elevation"
+                />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light_blue"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true">
+
+        <!-- Botón 1 -->
+        <RelativeLayout
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_rounded_background">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_recambios"
+                app:tint="@android:color/white"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recambios"
+                android:fontFamily="@font/nunito"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_below="@id/icon1"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+        <!-- Botón 2 -->
+        <RelativeLayout
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:layout_marginStart="8dp"
+
+            android:background="@drawable/button_rounded_background">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/ic_historial"
+                android:layout_centerHorizontal="true"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historial"
+                android:fontFamily="@font/nunito"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:layout_below="@id/icon2"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

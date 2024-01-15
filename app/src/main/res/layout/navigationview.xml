@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.navigation.dropin.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:accessToken="pk.eyJ1IjoiZmdhcnJpZG9maSIsImEiOiJjbGV6aG16ejAwZjd1M3lzMmo3N2FkOWN3In0.crUcVOmxcz-oEj0ABcLHng" />
+
+</LinearLayout>
