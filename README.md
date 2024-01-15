@@ -10,7 +10,7 @@
  * [LinkedIn](www.linkedin.com/in/fernando-garrido-fidalgo)
  
 ## Resultados
-![Captura de pantalla 2023-12-02 a las 20 34 45](https://github.com/fgarridofi/Gym_App-Ionic-OpenAi/assets/116899309/8c12c166-a352-4a07-9336-4e529f0d9d83)
+![484shots_so](https://github.com/fgarridofi/navigation-mobile-app/assets/116899309/924eabd5-b011-48ca-94f8-c1757da8b4f6)
 
 
 ## Instalación
