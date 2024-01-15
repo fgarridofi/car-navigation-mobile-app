@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/42ff28da-bee6-4350-913d-9f01fb7a9996/resourceGroups/RoadGoApp/providers/Microsoft.Web/sites/RoadGoApp",
+    "appService.deploySubpath": "."
+}
